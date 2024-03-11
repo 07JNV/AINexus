@@ -138,8 +138,11 @@ import "./details.css"
 const Details = () => {
     const location = useLocation();
     const currentUrl = location.pathname;
-    const id = currentUrl.slice(-1)
-    const url = 'https://65ede63108706c584d9ad669.mockapi.io/api/v1/Models_data/' + `${id}`;
+    console.log(currentUrl)
+    
+    const id = currentUrl.replace("/explore/", "");
+
+    const url = 'https://65ede63108706c584d9ad669.mockapi.io/api/v1/Models_data/'+`${id}` ;
 
     const fetchData = async () => {
         try {
