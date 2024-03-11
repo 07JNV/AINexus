@@ -1,0 +1,108 @@
+.db1 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.db1h {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.db1c1 {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.mimg {
+    width: 50%;
+    display: flex;
+
+}
+
+#mimg {
+    width: 50%;
+    height: auto;
+  box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.trynow {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.db1c3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+    cursor: pointer;
+}
+
+#trynow{
+    width: 94px;
+    height: 48px;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(16, 85, 235);
+}
+
+.db1c2 {
+   margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 5%;
+    border-radius: 8px ;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.mdes{
+     font-size: 20px;
+     font-weight: 400;
+     width: 100%;
+    
+}
+
+#mdes{
+    word-wrap: break-word; /* Wrap long words to prevent overflow */
+     overflow-wrap: break-word;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .db1c1{
+      width: 100%;
+    }
+    .mimg{
+        width: 100%;
+        padding: 0 10%;
+    }
+    .trynow{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .db1c2{
+        width: 100%;
+    }
+    #mimg{
+        width: 100%;
+    }
+    .db1h{
+        font-size: 24px;
+    }
+}
+
