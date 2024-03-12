@@ -6,7 +6,8 @@ import {
 } from 'mdb-react-ui-kit';
 import "./form.css"
 import Navbar from "../navbar/navbar.js"
-import Footer from "../footer/footer.js"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
     const [developer, setDeveloper] = useState('');
@@ -46,8 +47,17 @@ export default function App() {
             if (response.ok) {
                 const data = await response.json();
                 console.log('Data uploaded successfully:', data);
+                toast.success("Uploaded successfully !",)
+                    
+              
+                setTimeout(function() {
+                    window.location.href = "/"; 
+                }, 5000);
+
+
             } else {
                 console.error('Failed to upload data:', response.statusText);
+                toast.error("Error in uploading please try again")
             }
         } catch (error) {
             console.error('Error uploading data:', error);
@@ -71,6 +81,7 @@ export default function App() {
                         Add
                     </MDBBtn>
                 </form>
+                <ToastContainer />
 
             </div>
             {/* <Footer/> */}
